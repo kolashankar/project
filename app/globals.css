@@ -45,15 +45,22 @@
   }
 }
 
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-    /* subtle radial gradient for aether.ai premium feel */
-    background: radial-gradient(circle at 50% 0%, #0f2042 0%, #030712 100%);
+    background: linear-gradient(-45deg, #030712, #0c1631, #060b19, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     background-attachment: fixed;
   }
 }
@@ -63,7 +70,7 @@
   @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
 }
 .glass-card {
-  @apply bg-[#0c1631]/60 backdrop-blur-md border border-white/10 rounded-2xl;
+  @apply bg-[#0c1631]/60 backdrop-blur-xl border border-white/10 rounded-2xl;
 }
 .gold-gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-[#d4af37];
@@ -71,4 +78,31 @@
 
 html.scroll-smooth {
   scroll-behavior: smooth;
+}
+
+/* Fancy Glowing CTA Button */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  transform: skewX(-20deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 200%; }
+  100% { left: 200%; }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
 }
