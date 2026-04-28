@@ -7,7 +7,7 @@ export default function Academics() {
       year: "Pre-Primary", 
       title: "Foundation Stage", 
       desc: "Play-way method focusing on motor skills, creativity, and basic cognitive development in a highly interactive and nurturing environment.",
-      image: "https://www.istockphoto.com/photo/three-years-old-asian-boy-builds-figures-from-large-plastic-parts-with-interest-and-gm1497775916-520031347?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffoundation-stage-school&utm_term=foundation+stage+school%3A%3Aaffiliate-layout-optim%3Acontrol%3A7fb0f906-d211-49ad-b2c6-9f34f2961a9e"
+      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80"
     },
     { 
       year: "Primary", 
