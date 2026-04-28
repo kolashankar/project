@@ -7,7 +7,7 @@ export default function Academics() {
       year: "Pre-Primary", 
       title: "Foundation Stage", 
       desc: "Play-way method focusing on motor skills, creativity, and basic cognitive development in a highly interactive and nurturing environment.",
-      image: "https://www.google.com/imgres?q=foundation%20stage%20image&imgurl=https%3A%2F%2Fndna.org.uk%2Fwp-content%2Fuploads%2F2022%2F06%2FAdobeStock_320819860-1024x683.jpeg&imgrefurl=https%3A%2F%2Fndna.org.uk%2Fface-to-face-training%2Fintroduction-early-years-foundation-stage-eyfs%2F&docid=SSnTyWeXks1uuM&tbnid=HIWvDfp3v3v3hM&vet=12ahUKEwiovOel5pCUAxUbSWwGHb4rPB4QnPAOegQIFhAB..i&w=1024&h=683&hcb=2&ved=2ahUKEwiovOel5pCUAxUbSWwGHb4rPB4QnPAOegQIFhAB"
+      image: "https://www.istockphoto.com/photo/three-years-old-asian-boy-builds-figures-from-large-plastic-parts-with-interest-and-gm1497775916-520031347?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffoundation-stage-school&utm_term=foundation+stage+school%3A%3Aaffiliate-layout-optim%3Acontrol%3A7fb0f906-d211-49ad-b2c6-9f34f2961a9e"
     },
     { 
       year: "Primary", 
