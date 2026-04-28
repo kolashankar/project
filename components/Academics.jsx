@@ -7,7 +7,7 @@ export default function Academics() {
       year: "Pre-Primary", 
       title: "Foundation Stage", 
       desc: "Play-way method focusing on motor skills, creativity, and basic cognitive development in a highly interactive and nurturing environment.",
-      image: "https://images.unsplash.com/photo-1544605481-9b161f364e7c?auto=format&fit=crop&w=600&q=80"
+      image: "https://www.google.com/imgres?q=foundation%20stage%20image&imgurl=https%3A%2F%2Fndna.org.uk%2Fwp-content%2Fuploads%2F2022%2F06%2FAdobeStock_320819860-1024x683.jpeg&imgrefurl=https%3A%2F%2Fndna.org.uk%2Fface-to-face-training%2Fintroduction-early-years-foundation-stage-eyfs%2F&docid=SSnTyWeXks1uuM&tbnid=HIWvDfp3v3v3hM&vet=12ahUKEwiovOel5pCUAxUbSWwGHb4rPB4QnPAOegQIFhAB..i&w=1024&h=683&hcb=2&ved=2ahUKEwiovOel5pCUAxUbSWwGHb4rPB4QnPAOegQIFhAB"
     },
     { 
       year: "Primary", 
