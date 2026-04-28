@@ -37,7 +37,7 @@ export default function About() {
           >
             <div className="relative rounded-3xl overflow-hidden glass-card border-white/20 aspect-video md:aspect-[4/3] z-10 shadow-2xl shadow-primary/10">
               <img 
-                src="https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/7h5qs0v3_Screenshot%20from%202026-04-28%2014-58-03.png" 
+                src="https://images.unsplash.com/photo-1592066575517-58df903152f2" 
                 alt="Gnan Vihaar School Campus" 
                 className="w-full h-full object-cover"
               />

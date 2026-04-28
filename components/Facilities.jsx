@@ -8,25 +8,25 @@ export default function Facilities() {
       title: "Smart Classrooms",
       desc: "Interactive digital boards and ergonomic seating for highly focused, modern learning.",
       icon: <MonitorPlay className="w-8 h-8 text-primary" />,
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/f8sixpoi_Screenshot%20from%202026-04-28%2014-58-38.png",
+      image: "https://images.pexels.com/photos/7743256/pexels-photo-7743256.jpeg",
     },
     {
       title: "Science Labs",
       desc: "State-of-the-art equipment for hands-on, practical scientific exploration.",
       icon: <FlaskConical className="w-8 h-8 text-primary" />,
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/xddr7kai_Screenshot%20from%202026-04-28%2014-58-24.png",
+      image: "https://images.pexels.com/photos/8539652/pexels-photo-8539652.jpeg",
     },
     {
       title: "Pre-Primary Area",
       desc: "Vibrant, creative spaces designed exclusively for the safe growth of young minds.",
       icon: <BookOpen className="w-8 h-8 text-primary" />,
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/e0j0qkxz_Screenshot%20from%202026-04-28%2014-58-49.png",
+      image: "https://images.unsplash.com/photo-1567746455504-cb3213f8f5b8",
     },
     {
       title: "Modern Infrastructure",
       desc: "Premium, secure, and highly disciplined environment providing the utmost comfort.",
       icon: <Building2 className="w-8 h-8 text-primary" />,
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/wt2zgr0c_Screenshot%20from%202026-04-28%2014-58-18.png",
+      image: "https://images.unsplash.com/photo-1592066575517-58df903152f2",
     },
   ];
 

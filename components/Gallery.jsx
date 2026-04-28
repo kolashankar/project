@@ -7,13 +7,13 @@ export default function Gallery() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
-    "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/7h5qs0v3_Screenshot%20from%202026-04-28%2014-58-03.png",
-    "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/wt2zgr0c_Screenshot%20from%202026-04-28%2014-58-18.png",
+    "https://images.pexels.com/photos/7743256/pexels-photo-7743256.jpeg",
+    "https://images.pexels.com/photos/8539652/pexels-photo-8539652.jpeg",
     "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwc2Nob29sfGVufDB8fHx8MTc3NzM2NjQwOXww&ixlib=rb-4.1.0&q=85",
-    "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/xddr7kai_Screenshot%20from%202026-04-28%2014-58-24.png",
+    "https://images.unsplash.com/photo-1654626565292-10f85a1fad76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBtb3JuaW5nJTIwYXNzZW1ibHl8ZW58MHx8fHwxNzc3MzY5NTkyfDA&ixlib=rb-4.1.0&q=85",
     "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
-    "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/f8sixpoi_Screenshot%20from%202026-04-28%2014-58-38.png",
-    "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/e0j0qkxz_Screenshot%20from%202026-04-28%2014-58-49.png",
+    "https://images.pexels.com/photos/7743255/pexels-photo-7743255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.unsplash.com/photo-1553777907-f5dbbbb44d7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxzdHVkZW50cyUyMHBsYXlpbmclMjBzY2hvb2wlMjBwbGF5Z3JvdW5kfGVufDB8fHx8MTc3NzM2OTYwN3ww&ixlib=rb-4.1.0&q=85",
     "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80",
   ];
 

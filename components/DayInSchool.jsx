@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 
 export default function DayInSchool() {
@@ -14,25 +14,25 @@ export default function DayInSchool() {
       time: "08:00 AM",
       title: "Morning Assembly",
       desc: "Setting the tone for the day with discipline, prayer, and motivational speeches.",
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/7h5qs0v3_Screenshot%20from%202026-04-28%2014-58-03.png"
+      image: "https://images.unsplash.com/photo-1654626565292-10f85a1fad76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBtb3JuaW5nJTIwYXNzZW1ibHl8ZW58MHx8fHwxNzc3MzY5NTkyfDA&ixlib=rb-4.1.0&q=85"
     },
     {
       time: "09:00 AM",
       title: "Core Learning",
       desc: "Focused academic sessions in our smart classrooms driven by expert faculty.",
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/f8sixpoi_Screenshot%20from%202026-04-28%2014-58-38.png"
+      image: "https://images.pexels.com/photos/7743255/pexels-photo-7743255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       time: "11:30 AM",
       title: "Practical Sessions",
       desc: "Hands-on learning in our state-of-the-art science and computer labs.",
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/xddr7kai_Screenshot%20from%202026-04-28%2014-58-24.png"
+      image: "https://images.pexels.com/photos/32213405/pexels-photo-32213405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       time: "02:00 PM",
       title: "Creative & Play Time",
       desc: "Holistic development through sports, arts, and interactive play sessions.",
-      image: "https://customer-assets.emergentagent.com/job_gnan-elite-space/artifacts/e0j0qkxz_Screenshot%20from%202026-04-28%2014-58-49.png"
+      image: "https://images.unsplash.com/photo-1553777907-f5dbbbb44d7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxzdHVkZW50cyUyMHBsYXlpbmclMjBzY2hvb2wlMjBwbGF5Z3JvdW5kfGVufDB8fHx8MTc3NzM2OTYwN3ww&ixlib=rb-4.1.0&q=85"
     }
   ];
 

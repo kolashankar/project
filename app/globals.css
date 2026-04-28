@@ -10,9 +10,9 @@
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 43 74% 49%; /* Gold */
+    --primary: 43 74% 49%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 215 25% 27%; /* Deep Blue */
+    --secondary: 215 25% 27%;
     --secondary-foreground: 0 0% 100%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -25,15 +25,15 @@
   }
 
   .dark {
-    --background: 222 80% 5%; /* Very Deep Navy Blue Background */
+    --background: 222 80% 5%;
     --foreground: 210 40% 98%;
     --card: 222 60% 8%;
     --card-foreground: 210 40% 98%;
     --popover: 222 60% 8%;
     --popover-foreground: 210 40% 98%;
-    --primary: 43 85% 55%; /* Rich Gold */
+    --primary: 43 85% 55%;
     --primary-foreground: 222 80% 5%;
-    --secondary: 217 60% 15%; /* Deep Blue Accents */
+    --secondary: 217 60% 15%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217 60% 15%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -43,15 +43,7 @@
     --input: 217 60% 15%;
     --ring: 43 85% 55%;
   }
-}
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
@@ -65,22 +57,31 @@
   }
 }
 
-/* Glassmorphism utilities */
-.glass {
-  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.glass-card {
-  @apply bg-[#0c1631]/60 backdrop-blur-xl border border-white/10 rounded-2xl;
-}
-.gold-gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-[#d4af37];
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
+  }
+  .glass-card {
+    @apply bg-[#0c1631]/60 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+  .gold-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-[#d4af37];
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
 }
 
 html.scroll-smooth {
   scroll-behavior: smooth;
 }
 
-/* Fancy Glowing CTA Button */
 .btn-glow {
   position: relative;
   overflow: hidden;
@@ -101,8 +102,4 @@ html.scroll-smooth {
   0% { left: -100%; }
   20% { left: 200%; }
   100% { left: 200%; }
-}
-
-.perspective-1000 {
-  perspective: 1000px;
 }
