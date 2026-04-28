@@ -1,7 +1,7 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, Search } from "lucide-react";
 
 export default function Gallery() {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -18,7 +18,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-24 relative z-10">
+    <section id="gallery" className="py-24 relative z-10 bg-black/20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,9 +26,10 @@ export default function Gallery() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
             Campus <span className="gold-gradient-text drop-shadow-md">Gallery</span>
           </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl">
             A visual tour of our premium infrastructure and vibrant student life.
           </p>
@@ -42,19 +43,20 @@ export default function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: (idx % 4) * 0.1 }}
-              className="break-inside-avoid rounded-2xl overflow-hidden glass-card cursor-pointer group relative"
+              className="break-inside-avoid rounded-2xl overflow-hidden glass-card cursor-pointer group relative shadow-lg"
               onClick={() => setSelectedImg(src)}
             >
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
               <img
                 src={src}
                 alt="Gallery item"
-                className="w-full h-auto group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-auto group-hover:scale-110 group-hover:blur-[2px] transition-all duration-700"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="bg-[#030712]/80 text-white px-4 py-2 rounded-full backdrop-blur-md font-medium shadow-xl">
-                  View Image
-                </span>
+              <div className="absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center scale-90 group-hover:scale-100">
+                <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-[#030712] shadow-[0_0_30px_rgba(212,175,55,0.6)]">
+                  <Search size={28} />
+                </div>
               </div>
             </motion.div>
           ))}
@@ -65,25 +67,26 @@ export default function Gallery() {
       <AnimatePresence>
         {selectedImg && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 cursor-pointer"
+            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            animate={{ opacity: 1, backdropFilter: "blur(20px)" }}
+            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            className="fixed inset-0 z-[110] bg-[#030712]/90 flex items-center justify-center p-4 cursor-pointer"
             onClick={() => setSelectedImg(null)}
           >
             <button 
-              className="absolute top-6 right-6 text-white bg-white/10 hover:bg-primary hover:text-black p-3 rounded-full transition-colors"
+              className="absolute top-8 right-8 text-white bg-white/10 hover:bg-primary hover:text-black p-4 rounded-full transition-colors z-50 border border-white/20"
               onClick={(e) => { e.stopPropagation(); setSelectedImg(null); }}
             >
-              <X size={28} />
+              <X size={32} />
             </button>
             <motion.img
-              initial={{ scale: 0.8, y: 50 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.8, y: 50 }}
+              initial={{ scale: 0.8, y: 50, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.8, y: 50, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
               src={selectedImg}
               alt="Fullscreen view"
-              className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl border border-white/20 cursor-default"
+              className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl border-4 border-white/10 cursor-default"
               onClick={(e) => e.stopPropagation()}
             />
           </motion.div>
