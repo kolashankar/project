@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 43 74% 49%; /* Gold */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 27%; /* Deep Blue */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 43 74% 49%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222 80% 5%; /* Very Deep Navy Blue Background */
+    --foreground: 210 40% 98%;
+    --card: 222 60% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 60% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 43 85% 55%; /* Rich Gold */
+    --primary-foreground: 222 80% 5%;
+    --secondary: 217 60% 15%; /* Deep Blue Accents */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 60% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 43 85% 55%;
+    --accent-foreground: 222 80% 5%;
+    --border: 217 60% 15%;
+    --input: 217 60% 15%;
+    --ring: 43 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* subtle radial gradient for aether.ai premium feel */
+    background: radial-gradient(circle at 50% 0%, #0f2042 0%, #030712 100%);
+    background-attachment: fixed;
+  }
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
+}
+.glass-card {
+  @apply bg-[#0c1631]/60 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+.gold-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-[#d4af37];
+}
+
+html.scroll-smooth {
+  scroll-behavior: smooth;
+}
